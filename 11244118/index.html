@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人網頁排版</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .email-icon {
+            width: 130px; 
+            height: auto; 
+            cursor: pointer; 
+        }
+
+        .line-icon {
+            width: 150px; 
+            height: auto; 
+            cursor: pointer; 
+        }
+
+        .phone-icon {
+            width: 100px; 
+            height: auto; 
+            cursor: pointer; 
+            margin-top: -10px; 
+        }
+
+        .instagram-icon {
+            width: 100px; 
+            height: auto; 
+            cursor: pointer; 
+            margin-top: -5px; 
+        }
+
+        .progress-bar {
+            background-color: #ddd; /* 底色固定 */
+            border-radius: 8px;
+            overflow: hidden;
+            height: 20px; /* 進度條短一點 */
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .progress {
+            background-color: #cda8b8; /* 深色部分 */
+            height: 100%;
+            width: 0; /* 初始寬度為 0 */
+            transition: width 4s ease; /* 動畫效果 */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="section1">
+        <h1>My Website 我的個人網站</h1>
+        <h2>張語庭 CHANG,YU-TING</h2>
+    </div>
+    <div class="section2">
+        <h2><人生如瀑，永恆且自由的流動。></h2>
+    </div>
+</header>
+
+<nav>
+    <a href="#about-me">About Me</a>
+    <a href="#skills">聯絡方式</a>
+    <a href="#contact">專業技能</a>
+</nav>
+
+<main>
+    <article>
+        <section id="about-me" class="card">
+            <h2>About Me</h2>
+            <div class="wrap">
+                <div class="left-column">
+                    <img src="image/S__557998088.jpg" alt="個人照片">
+                    <h3>基本資訊</h3>
+                    <p>姓名: 張語庭</p>
+                    <p>就讀校系: 中原大學 資訊管理學系</p>
+                    <p>生日: 2005/08/28</p>
+                    <p>興趣: 打排球 看電影</p>
+                    <p>個人特質: 共情能力強 貼心 隨和</p>
+                    <p>家鄉: 新北市新莊區</p>
+                </div>
+                <div class="right-column">
+                    <div class="content-row">
+                        <img src="image/S__558587912.jpg" alt="系烤照片">
+                        <div class="text">
+                            <h3>系烤活動-公關組</h3>
+                            <p>這是我大學參與的第一個活動，主要的責任就是要負責向學校周圍的店家拉贊助，然後系烤當天在門口擔任接待以及小隊輔帶組員參與團康遊戲；活動結束後還要準備之前答應店家的贊助相對應的回饋方案。</p>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <img src="image/S__560259075.jpg" alt="耶舞照片">
+                        <div class="text">
+                            <h3>耶誕舞會-公關組</h3>
+                            <p>參與這次的活動，主要的工作是要準備活動當天的配對活動，要設計互動遊戲以及主持稿，並且在活動當天要幫忙接待等等的工作。</p>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <img src="image/S__560275458.jpg" alt="志工照片">
+                        <div class="text">
+                            <h3>課程活動-管理學志工</h3>
+                            <p>此次志工體驗我們是幫「康福智能發展中心」募集發票，這是我第一次參與募集發票的活動，因為這樣學習到如何著手進行慈善活動的工作，像是要選定地點、製作道具、去和民眾宣導等等。</p>
+                        </div>
+                    </div>
+                    <div class="content-row">
+                        <img src="image/S__560226308.jpg" alt="工作照片">
+                        <div class="text">
+                            <h3>工作經驗-美睫師</h3>
+                            <p>暑假的時候去上了美睫全科班，學習到了如何嫁接單根睫毛以及3D、6D的開花睫毛。結業後就開始練習真人模特累積作品集，未來計畫是開一家自己的美睫工作室。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article>
+        <section id="skills" class="card">
+            <h2>聯絡方式</h2>
+            <p>email
+                <a href="mailto:zhangyuting348@gmail.com" class="contact-link">
+                    <img src="https://i.postimg.cc/nhf1f7W2/Gmail-Logo.png" alt="發送郵件" class="email-icon">
+                </a>
+                line
+                <a href="line://ti/p/08283564" class="contact-link" target="_blank">
+                    <img src="https://i.postimg.cc/MTVb3m01/Line-Logo-2011-2013.png" alt="聯絡我" class="line-icon">
+                </a>
+                phone
+                <a href="tel:+886972033667" class="contact-link">
+                    <img src="https://i.postimg.cc/v8h7DzzS/icon-ui-032.png" alt="撥打電話" class="phone-icon">
+                </a>
+                instagram
+                <a href="https://www.instagram.com/yutiiing.05/?hl=zh-tw" class="contact-link" target="_blank">
+                    <img src="https://i.postimg.cc/7LnKBFFM/Instagram-IG-Logo-Transparent-Image.png" alt="Instagram" class="instagram-icon">
+                </a>
+            </p>
+        </section>
+    </article>
+
+    <article>
+        <section id="contact" class="card">
+            <h2>專業技能</h2>
+            <div class="skill-section">
+                <h3>1. 程式能力</h3>
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 58%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress"  style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-section">
+                <h3>2. 語言能力</h3>
+                <div class="skill">
+                    <span>English</span>
+                    <div class="progress-bar">
+                        <div class="progress"  style="width: 66%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Taiwanese </span>
+                    <div class="progress-bar">
+                        <div class="progress"  style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+<div class="clearfix"></div>
+
+    <footer>
+        <h5>Copyright @ 2024 All rights reserved</h5>
+    </footer>
+
+    <!-- 進度條動畫區域開始 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const skillSections = document.querySelectorAll('.skill');
+        const percentages = [65, 58, 75, 66, 95]; // 進度條百分比
+
+        // 初始化進度條寬度為 0%
+        skillSections.forEach(skill => {
+            const progressBar = skill.querySelector('.progress');
+            progressBar.style.width = '0%';
+        });
+
+        // 為導航連結添加事件監聽
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止默認跳轉行為
+                const targetId = this.getAttribute('href'); // 獲取目標 ID
+                const targetElement = document.querySelector(targetId); // 獲取目標元素
+
+                // 平滑滾動到目標元素
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+
+                // 先將進度條重設為 0%，然後觸發動畫
+                skillSections.forEach((skill, index) => {
+                    const progressBar = skill.querySelector('.progress');
+                    progressBar.style.width = '0%'; // 重置寬度
+
+                    // 延遲一點時間後重新設置為目標百分比，形成動畫效果
+                    setTimeout(() => {
+                        progressBar.style.width = percentages[index] + '%';
+                    }, 100); // 延遲 100 毫秒
+                });
+            });
+        });
+
+        // 滑動到頁面底部時啟動進度條動畫
+        window.addEventListener('scroll', function() {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                skillSections.forEach((skill, index) => {
+                    const progressBar = skill.querySelector('.progress');
+                    progressBar.style.width = percentages[index] + '%';
+                });
+            }
+        });
+    });
+</script>
+    <!-- 進度條動畫區域結束 -->
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdecef;
+    margin: 0;
+    font-size: large;
+}
+
+header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.section1 {
+    background-color: #e7cacf;
+    color: #545454;
+    padding: 20px;
+}
+
+.section2 {
+    background-color: #d0acb0; /* 第二塊的背景顏色 */
+    color: #545454;
+    padding: 10px;
+    font-family: "DFKai-SB", "標楷體", sans-serif; /* 設置標楷體 */
+}
+
+nav {
+    background-color: #e7cacf;
+    text-align: center;
+    font-family: Arial;
+    font-size: large;
+}
+
+nav a {
+    padding: 25px 30px;
+    display: inline-block;
+    color: #0c0b0b; /* 設定連結顏色 */
+    text-decoration: none; /* 去除下劃線 */
+}
+
+nav a:hover {
+    background-color: #cda8b8;
+    color: #545454;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 設定區塊樣式 */
+section {
+    padding: 50px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+/* About Me 區塊樣式 */
+.wrap {
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 2px solid #ddd; /* 增加分隔線 */
+    text-align: center;
+}
+
+.left-column img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.content-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.content-row img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+    margin-right: 15px;
+    margin-top: 18px;
+}
+
+.text {
+    flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .wrap {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        padding: 0;
+        border: none;
+    }
+
+    .content-row {
+        flex-direction: column;
+    }
+
+    .content-row img {
+        margin: 0 0 10px 0;
+    }
+}
+
+footer {
+    background-color: #cda8b8;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+}
+
+/* 方法二:修改HTM+CSS */
+.clearfix {
+    clear: both;
+}
+
+/* 專業技能區塊樣式 */
+.skill-section {
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd; /* 底色固定 */
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px; /* 進度條短一點 */
+    width: 100%;
+    margin-top: 5px;
+}
+
+.progress {
+    background-color: #cda8b8; /* 深色部分 */
+    height: 100%;
+    width: 0;
+    transition: width 3.5s ease; /* 動畫效果，讓進度條填滿時更平滑 */
+}
+
+.skill-section:hover .progress {
+    width: 95%; /* 根據每個技能的百分比更新 */
+}
+
+
+@keyframes bar1 {
+    from { width: 0; }
+    to { width: 100%; }
+}
